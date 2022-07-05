@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:Notes.Views"
+       x:Class="Notes.AppShell">
+    <!-- Display a bottom tab bar containing two tabs -->
+    <TabBar>
+        <ShellContent Title="Home"
+                      Icon="icon_feed.png"
+                      ContentTemplate="{DataTemplate views:NotesPage}" />
+        <ShellContent Title="Takeoff"
+                      Icon="icon_about.png"
+                      ContentTemplate="{DataTemplate views:AboutPage}" />
+        <ShellContent Title="Landing"
+                      Icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfijC6gZmOyHFuII3KRWIT9jzgT8l9vFHIugusqp=CAU"
+                      ContentTemplate="{DataTemplate views:Test}" />
+        <ShellContent Title="Help"
+                      Icon="icon_about.png"
+                      ContentTemplate="{DataTemplate views:AboutPage}" />
+    </TabBar>
+</Shell>
